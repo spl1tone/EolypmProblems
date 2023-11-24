@@ -19,8 +19,8 @@ internal class Program
 
             for (var i = 1; i <= a && currentDay <= k; i++) {
 
-                if (currentDay == n) { result += 0; }
-                else if (currentDay == m) { result += 2; }
+                if (currentDay % n == 0) { result += 0; }
+                else if (currentDay % m == 0) { result += 2; }
                 else { result += 1; }
 
                 currentDay++;
